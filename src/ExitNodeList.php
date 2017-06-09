@@ -2,13 +2,13 @@
 
 
 
-class ExitNodeList
+class ExitNodeList extends NodeList
 {
 
 	/**
 	 * @var array
 	 */
-	private $list = [
+	protected $list = [
 		'103.234.220.197',
 		'103.236.201.110',
 		'103.250.73.6',
@@ -771,15 +771,5 @@ class ExitNodeList
 		'96.66.15.147',
 		'97.74.237.196',
 	];
-
-
-
-	/**
-	 * @return array
-	 */
-	public function getIPs(): array
-	{
-		return $this->list;
-	}
 
 }

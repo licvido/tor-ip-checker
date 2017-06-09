@@ -2,13 +2,13 @@
 
 
 
-class FullNodeList
+class FullNodeList extends NodeList
 {
 
 	/**
 	 * @var array
 	 */
-	private $list = [
+	protected $list = [
 		'100.11.123.47',
 		'100.15.39.173',
 		'100.16.230.154',
@@ -7237,15 +7237,5 @@ class FullNodeList
 		'99.71.75.172',
 		'99.92.50.150',
 	];
-
-
-
-	/**
-	 * @return array
-	 */
-	public function getIPs(): array
-	{
-		return $this->list;
-	}
 
 }
