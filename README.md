@@ -1,14 +1,6 @@
-# Package
+# TOR IP Checker
 
-Package description.
-
-
-
-## Requirements
-
-Package requires PHP 7.0 or higher.
-
-- [another package](https://github.com/licvido/package)
+Checks if given IP is coming from TOR (exit) node.
 
 
 
@@ -17,14 +9,26 @@ Package requires PHP 7.0 or higher.
 The best way to install Package is using  [Composer](http://getcomposer.org/):
 
 ```sh
-$ composer require licvido/package
+$ composer require licvido/tor-ip-checker
 ```
 
 
 
 ## Usage
 
-Usage instructions.
+```php
+// prepare required list
+$exitNodeList = new ExitNodeList;
+$fullNodeList = new FullNodeList;
+
+$checker = new TorIpChecker($exitNodeList);
+
+if ($checker->isInList($_SERVER['REMOTE_ADDR'])) {
+	// TOR
+} else {
+	// standard way
+}
+```
 
 
 
