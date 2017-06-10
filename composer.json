@@ -1,6 +1,6 @@
 {
 	"name": "licvido/tor-ip-checker",
-	"description": "Checks if given IP is coming from TOR (exit) node.",
+	"description": "Checks if given IP is coming from Tor (exit) node.",
 	"type": "library",
 	"require": {
 		"php": ">=7.0"

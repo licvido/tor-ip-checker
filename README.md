@@ -1,12 +1,12 @@
-# TOR IP Checker
+# Tor IP Checker
 
-Checks if given IP is coming from TOR (exit) node.
+Checks if given IP is coming from Tor (exit) node.
 
 
 
 ## Installation
 
-The best way to install Package is using  [Composer](http://getcomposer.org/):
+The best way to install Tor IP Checker is using  [Composer](http://getcomposer.org/):
 
 ```sh
 $ composer require licvido/tor-ip-checker
